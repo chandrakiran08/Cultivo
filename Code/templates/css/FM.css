@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(img/FM1.jpg) no-repeat;
+    background-size: cover;
+
+    /* color: rgb(255, 255, 255); */
+}
+.container{
+    color: rgb(6, 6, 6);
+    border: 2px solid rgb(102, 99, 99);
+    background-color: rgb(9, 9, 9);
+    border-radius: 14px;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 110px;
+    width: 60em;
+    height: 25em;
+    flex-direction: row; 
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    opacity: 0.6;
+}
+.form{
+    position: absolute;
+    top: 55%;
+    /* left: 50px; */
+    margin-left: 8em;
+    margin-top: 10px;
+    transform: translate(-10%,-10%);
+    /* width: 400px; */
+    
+}
+.form value{
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 200px;
+    height: 20px;
+    border:0;
+    border-radius: 5px;
+    outline: none;
+}
+.btnn{
+    width: 100px;
+    height: 30px;
+    background: #f2f7f2f4;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
