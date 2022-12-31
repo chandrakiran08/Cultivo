@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/FM.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h2" style="color:white;flex-direction: column;">Buy Or Rent the Equipment </h1>
+        <div class="form">
+                <!-- <input type="text" name="vehicle" placeholder="Vehicle Type"> -->
+                <select id="Vehicle" onchange="preferedBrowser()">
+                    <option value="Select">Select Vehicle</option>
+                    <option value="Tractor">Tractor</option>
+                    <option value="CombineHarvester">Combine Harvesterx</option>
+                    <option value="Baler">Baler</option>
+                    <option value="Telehandler">Telehandler</option>
+                  </select>
+            &emsp;
+            <select id="Brand" onchange="preferedBrowser()">
+                <option value="Chrome">Chrome</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+              </select>
+                <!-- <input type="text" name="brand" placeholder="Brand"> -->
+            &emsp;
+            <select id="Price" onchange="preferedBrowser()">
+                <option value="Chrome">Chrome</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+              </select>
+                <!-- <input type="email" name="price" placeholder="Price Range">  -->
+                <br>
+            <button class="btnn"><a href="#">Search&#128269;</a></button>
+
+        </div>
+    </div>
+</body>
+<script>
+    function preferedBrowser() {
+      prefer = document.forms[0].browsers.value;
+    }
+    </script>
+</html>
